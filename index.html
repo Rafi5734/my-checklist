@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <h2>Daily Check List</h2>
+
+    <div class="container">
+        <h4>Your balance</h4>
+        <h1 id="balance">$<span id="intotal">0.00</span></h1>
+
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money plus">+$<span id="total-income">0.00</span></p>
+            </div>
+
+
+            <div>
+                <h4>Expences</h4>
+                <p id="money-minus" class="money minus">-$<span id="total-expense">0.00</span></p>
+            </div>
+        </div>
+
+        <h3>History</h3>
+
+        <ul id="list" class="list">
+            <!-- <button><i class="fas fa-times"></i></button> -->
+            <!-- <li class="minus">Cash<span>-$400</span><button class="delete-btn">X</button></li> -->
+        </ul>
+
+        <h3>Add New Transaction</h3>
+
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Text</label>
+                <input type="text" id="text" placeholder="Enter Text...">
+            </div>
+
+            <div class="form-control">
+                <label for="amount">Amount <br>(negative - expense, positive - income)</label>
+                <input type="number" id="amount" placeholder="Enter Amount...">
+            </div>
+            <button class="btn" id="submit-btn">Add Transaction</button>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
